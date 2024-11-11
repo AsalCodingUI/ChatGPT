@@ -1,0 +1,74 @@
+/* Category Dropdown */
+.category-dropdown {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.category-dropdown select {
+  appearance: none;
+  padding: 4px 24px 4px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 13px;
+  cursor: pointer;
+  color: #374151;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  background-size: 16px;
+}
+
+.category-dropdown select:required:invalid {
+  color: #6b7280;
+}
+
+/* Category Tabs */
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  background-color: #f3f4f6;
+  padding: 4px;
+  border-radius: 9999px;
+  margin: 16px;
+}
+
+.category-tab {
+  flex: 1;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  background: none;
+}
+
+.category-tab.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.category-tab:not(.active) {
+  color: #6b7280;
+}
+
+.category-tab:not(.active):hover {
+  color: #374151;
+}
+
+/* Chat item category badge */
+.chat-item-category {
+  font-size: 11px;
+  padding: 1px 6px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  color: #6b7280;
+  margin-left: 8px;
+  white-space: nowrap;
+}
